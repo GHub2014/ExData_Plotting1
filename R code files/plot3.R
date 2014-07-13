@@ -16,6 +16,7 @@ bind <- cbind(DateandTime, powerbind)
 
 ##Create plot 3
 png("plot3.png", width=480, height=480)
+
 plot(bind$DateandTime, bind$Sub_metering_1, type="l",
      xlab="",
      ylab="Energy sub metering")
@@ -23,6 +24,6 @@ lines(bind$DateandTime, bind$Sub_metering_2, col="red")
 lines(bind$DateandTime, bind$Sub_metering_3, col="blue")
 legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1, 
        col=c("black", "red", "blue"))
-png("plot3.png", width=480, height=480)
+
 dev.off()
 ## The file has been saved to your working directory. Move the file into a different folder if necessary.
