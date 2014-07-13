@@ -17,7 +17,7 @@ bind <- cbind(DateandTime, powerbind)
 ##Create plot 2
 png("plot2.png", width=480, height=480)
 
-with(bind, plot(DateandTime, Global_active_power, type="l", cex.axis=0.8, cex.lab=0.8, 
+with(bind, plot(DateandTime, Global_active_power, type="l", 
                 ylab="Global Active Power (kilowatts)",xlab=""))
 
 dev.off()
