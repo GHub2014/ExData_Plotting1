@@ -15,5 +15,10 @@ DateandTime <- strptime(DateTime, "%d/%m/%Y %H:%M:%S")
 bind <- cbind(DateandTime, powerbind)
 
 ##Create plot 2
+png("plot2.png", width=480, height=480)
+
 with(bind, plot(DateandTime, Global_active_power, type="l", cex.axis=0.8, cex.lab=0.8, 
                 ylab="Global Active Power (kilowatts)",xlab=""))
+
+dev.off()
+## The file has been saved to your working directory. Move the file into a different folder if necessary.
