@@ -17,7 +17,7 @@ bind <- cbind(DateandTime, powerbind)
 ##Create plot 1
 x <- as.numeric(bind$Global_active_power)
 
-png("plotTEST.png", width=480, height=480)
+png("plot1.png", width=480, height=480)
 
 hist(x, main="Global Active Power",
      xlab="Global Active Power (kilowatts)", ylab="Frequency", freq=TRUE, 
