@@ -1,5 +1,5 @@
 ##Script used to create plot1.png
-##Read in and clean the data.
+##Read in and clean data.
 ##The data file has already been saved and unzipped to the working directory. 
 setwd("~/Documents/Coursera/Class 4")
 household_power_consumption <- read.csv("~/Documents/Coursera/Class 4/household_power_consumption.txt", 
