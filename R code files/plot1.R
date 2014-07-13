@@ -16,6 +16,12 @@ bind <- cbind(DateandTime, powerbind)
 
 ##Create plot 1
 x <- as.numeric(bind$Global_active_power)
+
+png("plot1.png", width=480, height=480)
+
 hist(x, main="Global Active Power",
      xlab="Global Active Power (kilowatts)", ylab="Frequency", freq=TRUE, 
               ylim=c(0,1200), col="red", breaks = 11, seq(from=0, to=8, by=2), cex.axis=0.8, cex.lab=0.9)
+
+dev.off()
+## The file has been saved to your working directory. Move the file into a different folder if necessary.
